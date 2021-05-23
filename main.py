@@ -48,6 +48,7 @@ def extractor(image_path, filename):
     
     # save image to folder with same name as of original file
     image.save('cropped_images/'+os.path.splitext(filename)[0]+'.png')
+    print("Image saved")
     return ('cropped_images/'+os.path.splitext(filename)[0]+'.png')
 
 
@@ -100,7 +101,4 @@ if __name__ == '__main__':
                 st.success("Background removed!")    
                 st.balloons()
                 print()
-
-
-
 
